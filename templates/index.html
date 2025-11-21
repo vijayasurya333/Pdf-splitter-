@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF Splitter</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>PDF Splitter</h1>
+
+        <form action="/split" method="post" enctype="multipart/form-data">
+            <label for="pdf">Choose PDF:</label>
+            <input type="file" name="pdf" id="pdf" accept="application/pdf" required>
+
+            <label>Split Method:</label>
+            <select name="method" id="method">
+                <option value="pages">Split by Pages</option>
+            </select>
+
+            <label for="pages">Pages per split:</label>
+            <input type="number" name="pages" id="pages" min="1" value="1" required>
+
+            <button type="submit">Split PDF</button>
+        </form>
+    </div>
+</body>
+</html>
