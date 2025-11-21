@@ -1,0 +1,10 @@
+fastapi==0.95.2
+uvicorn[standard]==0.22.0
+pypdf==3.12.0
+python-multipart==0.0.6
+aiofiles==23.1.0
+python-magic==0.4.27
+requests==2.31.0
+brotli==1.0.9
+gunicorn==20.1.0
+boto3==1.28.12
